@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: #fffcfc;
+  color: #000000;
+}
+/* Styles for header section #d20000*/
+.nav_element{
+  background-color: #001849;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar{
+  background-color: #001849;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* Styles for main section */
+.block-1{
+  background-color: #001849;
+  text-align: center;
+  padding: 100px;
+  margin-top: 20px;
+  height: 150px;
+}
+
+
+
+
+
+
+
+/* Styles for footer section */
