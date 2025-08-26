@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSIET - Sri Sukhmani Institute of Engineering & Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-green-100 min-h-screen flex flex-col font-sans">
+
+  <!-- Navbar -->
+  <header class="sticky top-2 z-50 bg-white shadow-lg rounded-xl mx-2 mt-2">
+    <nav class="flex items-center px-2 py-2 rounded-xl bg-red-50 border-b-2 border-red-600 relative">
+      <!-- Logo -->
+      <div class="flex items-center flex-shrink-0 min-w-0 mr-2">
+        <a href="index.html" aria-label="Home">
+          <img src="../assets/logo.png" alt="College Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-md border-2 border-red-600 bg-white flex-shrink-0">
+        </a>
+      </div>
+      <!-- All Nav Links (always visible, flex, space-around, responsive font size, prevent overflow, no scroll) -->
+      <ul class="flex flex-1 justify-around items-center gap-1
+        text-xs
+        sm:text-sm
+        md:text-base
+        lg:text-lg
+        xl:text-xl
+        2xl:text-xl
+        transition-all duration-200
+        whitespace-nowrap
+        min-w-0
+        ">
+        <li class="flex-shrink min-w-0">
+          <a href="aboutUs.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">About Us</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="departments.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Departments</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="admissions.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Admissions</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="facilities.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Facilities</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="placements.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Placements</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="contactUs.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Contact Us</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="login.html" class="block bg-red-600 text-white font-bold px-3 sm:px-4 py-1 rounded-full shadow hover:bg-black active:bg-red-800 transition truncate">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flex-1 flex flex-col">
+
+    <!-- Hero Section -->
+    <section class="relative h-64 sm:h-[420px] flex items-center justify-center overflow-hidden px-2 sm:px-4">
+      <!-- Slider Background -->
+      <div class="absolute inset-0 w-full h-full overflow-hidden">
+        <div id="hero-slider" class="w-full h-full relative">
+          <img src="../assets/banner.avif" alt="SSIET Campus 1" class="slider-img absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-700" style="opacity:1;">
+        </div>
+      </div>
+      <div class="relative z-10 flex flex-col items-center justify-center text-center text-white px-2 sm:px-4 max-w-3xl mx-auto">
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-lg mb-4">Sri Sukhmani Institute of Engineering &amp; Technology</h1>
+        <p class="text-base sm:text-lg md:text-2xl font-medium mb-6 drop-shadow">Empowering Future Engineers Since 1997</p>
+        <a href="admissions.html" class="inline-block bg-red-700 hover:bg-red-700 text-white font-bold py-2 sm:py-3 px-4 sm:px-8 rounded-full shadow-lg text-base sm:text-lg transition-all duration-200">Admissions Open 2025</a>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="max-w-5xl mx-auto py-8 sm:py-12 px-2 sm:px-4 flex flex-col md:flex-row items-center gap-6 sm:gap-10">
+      <img src="../assets/ssietp-2.jpg" alt="SSIET Campus" class="w-full md:w-1/2 rounded-2xl shadow-lg border-4 border-red-200 object-cover flex-shrink-0 mb-6 md:mb-0">
+      <div class="flex-1 flex flex-col">
+        <h2 class="text-2xl sm:text-3xl font-bold text-red-800 mb-4">Welcome to SSIET</h2>
+        <p class="text-gray-700 text-base sm:text-lg mb-4">
+          Sri Sukhmani Institute of Engineering &amp; Technology (SSIET), Dera Bassi, is a premier institution dedicated to providing quality technical education and fostering innovation. With state-of-the-art infrastructure, experienced faculty, and a vibrant campus life, SSIET is the ideal destination for aspiring engineers and technocrats.
+        </p>
+        <a href="aboutUs.html" class="inline-block mt-2 text-red-700 font-semibold hover:underline">Learn more about us &rarr;</a>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="py-8 sm:py-12 bg-gradient-to-r from-blue-50 via-white to-green-50 px-2 sm:px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-red-700 mb-6 sm:mb-10">Campus Facilities</h2>
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center w-full sm:w-64">
+            <img src="../assets/library.png" alt="Library" class="w-16 h-16 sm:w-24 sm:h-24 rounded-full mb-3 object-cover border-2 border-red-400">
+            <h3 class="text-base sm:text-lg font-bold text-red-700 mb-1">Central Library</h3>
+            <p class="text-gray-600 text-center text-xs sm:text-sm">A vast collection of books, journals, and digital resources for students and faculty.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center w-full sm:w-64">
+            <img src="../assets/hostel.png" alt="Hostel" class="w-16 h-16 sm:w-24 sm:h-24 rounded-full mb-3 object-cover border-2 border-red-400">
+            <h3 class="text-base sm:text-lg font-bold text-red-700 mb-1">Hostels</h3>
+            <p class="text-gray-600 text-center text-xs sm:text-sm">Comfortable and secure accommodation for boys and girls with modern amenities.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center w-full sm:w-64">
+            <img src="../assets/lab.png" alt="Labs" class="w-16 h-16 sm:w-24 sm:h-24 rounded-full mb-3 object-cover border-2 border-red-400">
+            <h3 class="text-base sm:text-lg font-bold text-red-700 mb-1">Advanced Labs</h3>
+            <p class="text-gray-600 text-center text-xs sm:text-sm">State-of-the-art laboratories for practical learning and research.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center w-full sm:w-64">
+            <img src="../assets/sports.png" alt="Sports" class="w-16 h-16 sm:w-24 sm:h-24 rounded-full mb-3 object-cover border-2 border-red-400">
+            <h3 class="text-base sm:text-lg font-bold text-red-700 mb-1">Sports Complex</h3>
+            <p class="text-gray-600 text-center text-xs sm:text-sm">Modern sports facilities for holistic development.</p>
+          </div>
+        </div>
+        <div class="text-center mt-6 sm:mt-8">
+          <a href="facilities.html" class="text-red-700 font-semibold hover:underline">Explore all facilities &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placements & Recruiters -->
+    <section class="py-8 sm:py-12 bg-white px-2 sm:px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-red-800 mb-6 sm:mb-10">Placements &amp; Recruiters</h2>
+        <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-10">
+          <div class="flex-1 flex justify-center w-full">
+            <img src="../assets/placement.jpg" alt="Placements" class="rounded-2xl shadow-lg border-4 border-pink-200 object-cover w-full max-w-xs sm:max-w-md">
+          </div>
+          <div class="flex-1 flex flex-col w-full">
+            <p class="text-gray-700 text-base sm:text-lg mb-4">
+              SSIET boasts an excellent placement record with top recruiters from various industries. Our dedicated placement cell ensures students are industry-ready and provides training, internships, and career guidance.
+            </p>
+            <div class="flex flex-wrap gap-2 sm:gap-4 mb-4">
+              <img src="../assets/TOI.png" alt="TOI" class="h-6 sm:h-8">
+              <img src="../assets/shipManagement.png" alt="Execute ship management" class="h-6 sm:h-8">
+              <img src="../assets/allengers.png" alt="allengers" class="h-6 sm:h-8">
+              <img src="../assets/indSphinx.png" alt="indSphinx" class="h-6 sm:h-8">
+              <img src="../assets/netSmartz.png" alt="netSmartz" class="h-6 sm:h-8">
+            </div>
+            <a href="placements.html" class="text-red-700 font-semibold hover:underline">See placement details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-700 text-white mt-8 sm:mt-12">
+    <div class="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-8 sm:py-10 flex flex-col md:flex-row flex-wrap justify-between gap-4 sm:gap-8">
+      
+
+        <p class="text-xs sm:text-sm">Affiliated &amp; Approved By AICTE, IKGPTU &amp; Govt. of Punjab</p>
+        <p class="text-xs sm:text-sm">Chandigarh-Delhi NH-152, Dera Bassi, (Punjab) | CAMPUS: 8 KM’s FROM CHANDIGARH</p>
+        <p class="text-xs sm:text-sm">Phone: <a href="tel:+918765756687" class="underline">+91 8765756687</a></p>
+        <p class="text-xs sm:text-sm">Email: <a href="mailto:info@srisukhmanigroup.edu.in" class="underline">info@srisukhmanigroup.edu.in</a></p>
+        
+      <div class="flex-1 min-w-0 sm:min-w-[180px] flex flex-col gap-2">
+        <h3 class="font-bold mb-2">Quick Links</h3>
+        <div class="flex flex-col gap-1">
+          <a href="aboutUs.html" class="hover:underline">About Us</a>
+          <a href="departments.html" class="hover:underline">Departments</a>
+          <a href="admissions.html" class="hover:underline">Admissions</a>
+          <a href="facilities.html" class="hover:underline">Facilities</a>
+          <a href="placements.html" class="hover:underline">Placements</a>
+          <a href="contactUs.html" class="hover:underline">Contact Us</a>
+        </div>
+      </div>
+      <div class="flex-1 min-w-0 sm:min-w-[180px] flex flex-col gap-2">
+        <h3 class="font-bold mb-2">Important Links</h3>
+        <a href="https://www.srisukhmanigroup.edu.in/" class="hover:underline">SSGI</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="text-center text-xs sm:text-sm py-4 border-t border-red-700">
+      &copy; 2025 Sri Sukhmani Institute of Engineering &amp; Technology. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

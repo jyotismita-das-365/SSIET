@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="sticky top-2 z-50 bg-white shadow-lg rounded-xl mx-2 mt-2">
+    <nav class="flex items-center px-2 py-2 rounded-xl bg-red-50 border-b-2 border-red-600 relative">
+      <!-- Logo -->
+      <div class="flex items-center flex-shrink-0 min-w-0 mr-2">
+        <a href="index.html" aria-label="Home">
+          <img src="../assets/logo.png" alt="College Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full shadow-md border-2 border-red-600 bg-white flex-shrink-0">
+        </a>
+      </div>
+      <!-- All Nav Links (always visible, flex, space-around, responsive font size, prevent overflow, no scroll) -->
+      <ul class="flex flex-1 justify-around items-center gap-1
+        text-xs
+        sm:text-sm
+        md:text-base
+        lg:text-lg
+        xl:text-xl
+        2xl:text-xl
+        transition-all duration-200
+        whitespace-nowrap
+        min-w-0
+        ">
+        <li class="flex-shrink min-w-0">
+          <a href="aboutUs.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">About Us</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="departments.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Departments</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="admissions.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Admissions</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="facilities.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Facilities</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="placements.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Placements</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="contactUs.html" class="block text-black hover:text-red-600 hover:bg-red-50 active:text-white active:bg-red-600 transition px-1 sm:px-2 py-1 rounded-lg truncate">Contact Us</a>
+        </li>
+        <li class="flex-shrink min-w-0">
+          <a href="login.html" class="block bg-red-600 text-white font-bold px-3 sm:px-4 py-1 rounded-full shadow hover:bg-black active:bg-red-800 transition truncate">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 p-10 mt-10 rounded-xl shadow-lg max-w-xl mx-auto">
+    <h2 class="text-yellow-400 text-3xl font-extrabold mb-6 tracking-wide text-center">ADMISSION FORM</h2>
+    <form>
+      <div class="mb-4">
+        <label for="studentName" class="block text-white font-semibold mb-2">Student Name *</label>
+        <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+      </div>
+      <div class="mb-4">
+        <label for="studentEmail" class="block text-white font-semibold mb-2">Email Address *</label>
+        <input type="email" id="studentEmail" name="studentEmail" placeholder="Enter your email" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+      </div>
+      <div class="mb-4">
+        <label for="studentPhone" class="block text-white font-semibold mb-2">Phone Number *</label>
+        <input type="text" id="studentPhone" name="studentPhone" placeholder="Enter your phone number" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+      </div>
+      <div class="mb-4">
+        <label for="branch" class="block text-white font-semibold mb-2">Engineering Branch *</label>
+        <select id="branch" name="branch" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 pt-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+          <option value="" class="text-gray-400 font-normal">Select Branch</option>
+          <option value="CSE" class="text-gray-900 bg-yellow-100">Computer Science & Engineering</option>
+          <option value="ECE" class="text-gray-900 bg-yellow-100">Electronics & Communication Engineering</option>
+          <option value="ME" class="text-gray-900 bg-yellow-100">Mechanical Engineering</option>
+          <option value="CE" class="text-gray-900 bg-yellow-100">Civil Engineering</option>
+          <option value="EE" class="text-gray-900 bg-yellow-100">Electrical Engineering</option>
+        </select>
+        </select>
+      </div>
+      
+      <div class="mb-4 flex gap-4">
+        <div class="w-1/2">
+          <label for="marksObtained" class="block text-white font-semibold mb-2">Marks Obtained *</label>
+          <input type="number" id="marksObtained" name="marksObtained" placeholder="Obtained" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" min="0" required>
+        </div>
+        <div class="w-1/2">
+          <label for="totalMarks" class="block text-white font-semibold mb-2">Total Marks *</label>
+          <input type="number" id="totalMarks" name="totalMarks" placeholder="Total" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" min="0" required>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label for="yearOfPassing" class="block text-white font-semibold mb-2">Year of Passing *</label>
+        <input type="text" id="yearOfPassing" name="yearOfPassing" placeholder="e.g. 2024" class="bg-gray-800 text-white border border-yellow-400 h-12 w-full p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+      </div>
+      <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl border-none h-12 w-full rounded-lg transition duration-200">Submit Query</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-red-700 text-white mt-8 sm:mt-12">
+    <div class="max-w-7xl mx-auto px-2 sm:px-4 md:px-6 py-8 sm:py-10 flex flex-col md:flex-row flex-wrap justify-between gap-4 sm:gap-8">
+        <p class="text-xs sm:text-sm">Affiliated &amp; Approved By AICTE, IKGPTU &amp; Govt. of Punjab</p>
+        <p class="text-xs sm:text-sm">Chandigarh-Delhi NH-152, Dera Bassi, (Punjab) | CAMPUS: 8 KM’s FROM CHANDIGARH</p>
+        <p class="text-xs sm:text-sm">Phone: <a href="tel:+918765756687" class="underline">+91 8765756687</a></p>
+        <p class="text-xs sm:text-sm">Email: <a href="mailto:info@srisukhmanigroup.edu.in" class="underline">info@srisukhmanigroup.edu.in</a></p>
+        
+      <div class="flex-1 min-w-0 sm:min-w-[180px] flex flex-col gap-2">
+        <h3 class="font-bold mb-2">Quick Links</h3>
+        <div class="flex flex-col gap-1">
+          <a href="aboutUs.html" class="hover:underline">About Us</a>
+          <a href="departments.html" class="hover:underline">Departments</a>
+          <a href="admissions.html" class="hover:underline">Admissions</a>
+          <a href="facilities.html" class="hover:underline">Facilities</a>
+          <a href="placements.html" class="hover:underline">Placements</a>
+          <a href="contactUs.html" class="hover:underline">Contact Us</a>
+        </div>
+      </div>
+      <div class="flex-1 min-w-0 sm:min-w-[180px] flex flex-col gap-2">
+        <h3 class="font-bold mb-2">Important Links</h3>
+        <a href="https://www.srisukhmanigroup.edu.in/" class="hover:underline">SSGI</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="text-center text-xs sm:text-sm py-4 border-t border-red-700">
+      &copy; 2025 Sri Sukhmani Institute of Engineering &amp; Technology. All rights reserved.
+    </div>
+  </footer>
+</body>
